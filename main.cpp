@@ -42,11 +42,13 @@ for (int row=0; row<imagePixels.size(); row++)
   color.green=0;
   color.blue=0;
   imagePixels[row][column]=color;
-  image.fromPixelMatrix(imagePixels);
-  image.save("redness.bmp");
   }
-
 }
+image.fromPixelMatrix(imagePixels);
+image.save("redness.bmp");
+  
+
+
 }
 return 0;
 }
